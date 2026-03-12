@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="script.js"></script>
+
+</head>
+    <body>
+
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <h1>Travel Adventures</h1>
+        <p class="desc"><b>Welcome travellers! </b>This page is dedicated to sharing travel tips and information about exciting destinations around the world. <i>scroll down!</i></p>
+    
+        <!--- div tag is used to group related elements --->
+        <div class="img-section">
+            <img src="D:\WMT\resources\img1.jpg" alt="Travelling" width="300" height="200" style="border:2px solid #333; padding:1px;">
+            <p><a href="https://www.srilanka.travel/">Visit the official website of Sri Lanka Tourism</a></p>
+        <hr>
+        </div>
+        <h2>Packing Essentials</h2>
+        <ol>
+            <li>Clothes</li> 
+            <li>Travel Documents</li>
+            <li>Gadjets</li>
+            <ul>
+                <li>Phone</li>
+                <li>Smartphone</li>
+            </ul>
+            <li>Toiletries</li>
+        </ol>
+        
+        <h3>Trip Cost Overview</h3>
+        <table class="trip-table">
+            <tr>
+                <th>Item</th>
+                <th>Cost</th>
+                <th>Notes</th>
+                <th>Included Items</th>
+            </tr>
+            <tr>
+                <td>Flight Ticket</td>
+                <td>1200</td>
+                <td>Round trip</td>
+                <td rowspan="3">
+                    <ul>
+                        <li>Flight Ticket</li>
+                        <li>Hotel</li>
+                        <li>Food</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Hotel</td>
+                <td>800</td>
+                <td>Round trip</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>400</td>
+                <td>Estimated</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>Traveller Information</h2>
+        <p>Please enter your details:</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="18" max="120" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <option value="sri_lanka">Sri Lanka</option>
+                <option value="maldives">Maldives</option>
+                <option value="thailand">Thailand</option>
+            </select><br><br>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <p class="note">Check the browser console to see stored students</p>
+
+        <hr>
+        <footer>
+            <p>Created by: Darth Vader</p>
+</body>
+</html>
