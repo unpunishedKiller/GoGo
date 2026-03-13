@@ -2,6 +2,11 @@ let students = [];
 const minAge =18;
 
 function submitForm() {
+    let title = document.getElementByTagName("h1")[0];
+    let image = document.image[0];
+    let form = document.forms[0];
+
+
     let name = document.getElementById("name").value;
     let age = Number(document.getElementById("age").value);
     let email = document.getElementById("email").value;
