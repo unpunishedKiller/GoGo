@@ -1,6 +1,21 @@
 let students = [];
 const minAge =18;
 
+window.onload = function() {
+    let title = document.getElementsByTagName("h1")[0];
+    
+    title.style.color = "darkblue";
+    title.style.fontsize = "36px";
+    title.style.fontfamily = "Arial";
+
+    console.log("Page URL: ", document.URL);
+    console.log("Last Modified: ", document.lastModified);
+    document.title = "Welcome Traveler!";
+};
+
+let image = document.images[0];
+let form = document.forms[0]
+
 function submitForm() {
     let name = document.getElementById("name").value;
     let age = Number(document.getElementById("age").value);
